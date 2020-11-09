@@ -1,0 +1,90 @@
+.command {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: $secondary-background-color;
+
+    @media screen and (min-width: 1200px) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
+}
+
+.command__primary {
+    @extend %primary;
+
+    @media screen and (min-width: 1200px) {
+        font-size: 36px;
+        margin-bottom: 50px;
+    }
+}
+
+.command__title {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+    letter-spacing: 0.03em;
+    color: $title-text-color;
+}
+
+.command__list {
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        flex-wrap: wrap;
+    }
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+    }
+ }
+
+.command__item {
+    text-align: center;
+    padding-bottom: 24px;
+    background-color: $primary-white-color;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 
+    0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+
+    @media screen and (max-width: 767px) {
+        &:not(:last-child) {
+            margin-bottom: 30px;
+        }
+    }    
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        flex-basis: calc((100% - 30px) / 2);
+
+        &:nth-child(2n+1) {
+            margin-right: 30px;
+        }
+
+        &:not(:nth-last-child(-n + 2)) {
+            margin-bottom: 30px;
+        }
+    }
+
+    @media screen and (min-width: 1200px) {
+        padding-bottom: 30px;
+
+        &:not(:last-child) {
+            margin-right: 30px;
+        }
+    }
+}
+
+.command__picture {
+    margin-bottom: 30px;
+}
+
+.command__text {
+    margin-top: 0;
+    margin-bottom: 16px;
+    font-size: 16px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+}

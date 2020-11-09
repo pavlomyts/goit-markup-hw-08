@@ -1,0 +1,85 @@
+.hero {
+    padding-top: 118px;
+    padding-bottom: 118px;
+    text-align: center;
+
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4), 
+        rgba(47, 48, 58, 0.4)
+        ), 
+        url("../images/mobile/banner-mobile.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 480px;
+    align-items: center;
+
+    @media screen and (min-device-pixel-ratio: 2),
+			screen and (min-resolution: 192dpi),
+			screen and (min-resolution: 2dppx) {
+                background-image: url("../images/mobile/banner-mobile@2x.jpg");
+            }
+
+    @media screen and (min-width: 768px) {
+        background-image: linear-gradient(
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)
+            ),
+            url("../images/tablet/banner-tab.jpg");
+        max-width: 768px;
+
+        @media screen and (min-device-pixel-ratio: 2),
+			screen and (min-resolution: 192dpi),
+			screen and (min-resolution: 2dppx) {
+                background-image: url("../images/tablet/banner-tab@2x.jpg");
+            }
+    }
+
+    @media screen and (min-width: 1200px) {
+        max-width: 1600px;
+        padding-top: 200px;
+        padding-bottom: 200px; 
+        background-image: linear-gradient(
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)
+            ),
+            url("../images/banner.jpg");
+
+        @media screen and (min-device-pixel-ratio: 2),
+			screen and (min-resolution: 192dpi),
+			screen and (min-resolution: 2dppx) {
+                background-image: url("../images/banner@2x.jpg");
+            }
+    }
+
+
+}
+
+.hero__title {
+    max-width: 360px;
+    margin-top: 0;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.6;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: $primary-white-color;
+
+    @media screen and (min-width: 1200px) {
+        max-width: 696px;
+        font-size: 44px;
+        line-height: 1.37;
+    }
+}
+
+.hero__button {
+    padding-left: 32px;
+    padding-right: 32px;
+}

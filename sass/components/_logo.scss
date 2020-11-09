@@ -1,0 +1,26 @@
+.logo {
+    // margin-right: 93px;
+    display: inline-block;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    font-family: $logo-font;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+    color: $logo-color;
+
+    @media screen and (min-width: 1200px) {
+        padding-top: 25px;
+        padding-bottom: 25px;
+        font-size: 26px;
+        line-height: 1.19;
+    }
+}
+
+.logo__text { color: $accent-color;}
+
+.logo--inversion {
+    color: $primary-white-color;
+}
+
